@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Personal Information Form</h2>
+        <form onsubmit="return validateForm()" class="form">
+            <div class="form-field">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-field">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" required>
+            </div>
+
+            <div class="form-field">
+                <label for="aadhar">Aadhar Number:</label>
+                <input type="text" id="aadhar" name="aadhar" required>
+            </div>
+
+            <div class="form-field">
+                <label for="panCard">PAN Card:</label>
+                <input type="text" id="panCard" name="panCard" required>
+            </div>
+
+            <div class="form-field">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <h3>Enter Marks for 6 Subjects (Out of 100)</h3>
+            <div class="form-field">
+                <label for="subject1">Subject 1:</label>
+                <input type="number" id="subject1" name="subject1" min="0" max="100" required>
+            </div>
+
+            <div class="form-field">
+                <label for="subject2">Subject 2:</label>
+                <input type="number" id="subject2" name="subject2" min="0" max="100" required>
+            </div>
+
+            <div class="form-field">
+                <label for="subject3">Subject 3:</label>
+                <input type="number" id="subject3" name="subject3" min="0" max="100" required>
+            </div>
+
+            <div class="form-field">
+                <label for="subject4">Subject 4:</label>
+                <input type="number" id="subject4" name="subject4" min="0" max="100" required>
+            </div>
+
+            <div class="form-field">
+                <label for="subject5">Subject 5:</label>
+                <input type="number" id="subject5" name="subject5" min="0" max="100" required>
+            </div>
+
+            <div class="form-field">
+                <label for="subject6">Subject 6:</label>
+                <input type="number" id="subject6" name="subject6" min="0" max="100" required>
+            </div>
+
+            <div class="form-action">
+                <input type="submit" value="Submit">
+            </div>
+            <div id="percentageDisplay"></div>
+
+        </form>
+    </div>
+</body>
+</html>
